@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'file -fa /tmp/iamafile'
+echo 'file -a /tmp/iamafile'
