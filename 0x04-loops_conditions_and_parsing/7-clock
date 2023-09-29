@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # A script that displays the time for 12 hours and 59 minutes.
 
-HPD=0
+Hour=0
 MPHR=1
 
-while [ $HPD -le 12 ];
+while [ $Hour -le 12 ];
 do
-	echo "HPD: $HPD"
+	echo "Hour: $Hour"
 	while [ $MPHR -le 59 ];
 	do
 		echo "$MPHR"
 		((MPHR++))
 	done
 	MPHR=1
-	((HPD++))
+	((Hour++))
 done
