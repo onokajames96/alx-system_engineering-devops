@@ -5,34 +5,34 @@
 # Concepts
 For this project, we expect you to look at this concept:
 
-##What is a Child Process?
+ [ What is a Child Process?]
 
 # Resources
 Read or watch:
 
-.How the web works
+. [How the web works]
 
-.Nginx
+. [Nginx]
 
-.How to Configure Nginx
+. [How to Configure Nginx]
 
-.Child process concept page
+. [Child process concept page]
 
-.Root and sub domain
+. [Root and sub domain]
 
-.HTTP requests
+. [HTTP requests]
 
-.HTTP redirection
+. [HTTP redirection]
 
-.Not found HTTP response code
+. [Not found HTTP response code]
 
-.Logs files on Linux
+. [Logs files on Linux]
 
 # For reference:
 
-.RFC 7231 (HTTP/1.1)
+. [RFC 7231 (HTTP/1.1)]
 
-.RFC 7540 (HTTP/2)
+. [RFC 7540 (HTTP/2)]
 
 man or help:
 
