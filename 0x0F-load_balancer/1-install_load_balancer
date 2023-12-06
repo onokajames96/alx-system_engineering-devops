@@ -1,22 +1,17 @@
 #!/bin/bash
 # Update package list and install HAProxy
 
-sudo apt-get update
-sudo apt-get install -y haproxy
-sudo cat <<EOF > /etc/haproxy/haproxy.cfg
-frontend lb-frontend
-    bind *:80
-    mode http
-    option http-server-close
-    default_backend lb-backend
-
-backend lb-backend
-    mode http
-    balance roundrobin
-    server web-01 [STUDENT_ID]-web-01:80 check
-    server web-02 [STUDENT_ID]-web-02:80 check
-EOF
-
-sudo service haproxy restart
-
-sudo update-rc.d haproxy defaults
+apt-get update -y
+apt-get install -y haproxy
+sed -i "s|ENABLED=0|ENABLED=1|g" /etc/default/haproxy
+echo -e "frontend front_1
+\tbind :80
+\tmode http
+\tdefault_backend back_1
+backend back_1
+\tmode http
+\tbalance roundrobin
+\toption forwardfor
+\tserver 27432-web-01 3.80.19.175:80 check
+\tserver 27432-web-02 34.239.253.118:80 check" | tee -a /etc/haproxy/haproxy.cfg
+service haproxy restart
