@@ -22,4 +22,5 @@ uneven distribution of requests to user authentication servers. My team managed 
 -Implement automated scaling to handle unexpected traffic surges more effectively.
 -improve monitoring for load balancer performance and configuration
 
-
+# blog post link
+https://www.linkedin.com/pulse/postmortem-james-onoka-oacnf
